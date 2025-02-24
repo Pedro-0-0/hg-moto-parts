@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hg Moto Part's</title>
+    <link rel="stylesheet" href="HG.CSS">
+</head>
+<body>
+    <center>
+    <header>
+       
+        <div class="header-container">
+            <h1>Hg Moto Part's</h1>
+            <p>Melhores peças</p>
+        </div>
+    </header>
+</center>
+    
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Pesquisar peças..." onkeyup="searchProducts()">
+            </div>
+            <nav>
+                <ul>
+                    <li><button class="menu-button" onclick="showHome()">Home</button></li>
+                    <li><button class="menu-button" onclick="showPeças()">Peças</button></li>
+                    <li><button class="menu-button" onclick="showContato()">Contato</button></li>
+                </ul>
+            </nav>
+            <div id="sub-categorias" style="display:none;">
+                <ul>
+                    <li><button class="menu-button" onclick="showProduto('motor')">Motor</button></li>
+                    <li><button class="menu-button" onclick="showProduto('eletrica')">Elétrica</button></li>
+                    <li><button class="menu-button" onclick="showProduto('carenagens')">Carenagens</button></li>
+                </ul>
+            </div>
+        </aside>
+        
+        <section class="content-container" id="content-container">
+            <!-- O conteúdo mudará dinamicamente via JS -->
+        </section>
+    </div>
+
+    <script src="HG.JS"></script>
+</body>
+</html>

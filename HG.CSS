@@ -1,0 +1,140 @@
+/* Resetando estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .header-container h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+header .header-container p {
+    color: orange;
+    font-size: 20px;
+}
+
+/* Layout principal */
+.main-container {
+    display: flex;
+    padding: 20px;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar .search-box {
+    margin-bottom: 20px;
+}
+
+.sidebar input {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    border: 1px solid #777;
+    color: white;
+    border-radius: 5px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+/* Estilização dos botões no menu */
+.menu-button {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #444;
+}
+
+/* Conteúdo */
+.content-container {
+    margin-left: 270px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-card .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    margin-top: 10px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67e00;
+}
